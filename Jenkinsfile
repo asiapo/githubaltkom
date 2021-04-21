@@ -16,6 +16,16 @@ pipeline {
             steps {
                 echo 'Deploying....'
             }
+         }
+        stage('Scripting') {
+            steps {
+                script{
+                    if (2+2!=4){
+                        printIn('jej');
+                    }
+                    else{
+                        print('wow!!');
+            }
         }
     }
 }
